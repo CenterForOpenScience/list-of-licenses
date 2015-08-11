@@ -1,0 +1,11 @@
+{
+  "name": "licenses",
+  "version": "0.0.1",
+  "description": "A collection of common licenses.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "samchrisinger",
+  "license": "ISC"
+}
