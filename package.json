@@ -1,6 +1,6 @@
 {
-  "name": "licenses",
-  "version": "0.0.1",
+  "name": "list-of-licenses",
+  "version": "0.0.2",
   "description": "A collection of common licenses.",
   "main": "index.js",
   "scripts": {
@@ -9,8 +9,13 @@
   "author": "samchrisinger",
   "license": "ISC",
   "repository": {
-     "url": "https://github.com/samchrisinger/licenses.git",
-     "type": "git"
+    "url": "https://github.com/samchrisinger/licenses.git",
+    "type": "git"
   },
-  "keywords": ["license"]
+  "keywords": [
+    "license"
+  ],
+  "dependencies": {
+    "raw-loader": "^0.5.1"
+  }
 }
