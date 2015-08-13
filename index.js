@@ -1,4 +1,4 @@
-var index = {
+module.exports = {
     MIT: {
         name: 'MIT License',
         text: require('raw!./licenses/mit.txt'),
@@ -15,6 +15,7 @@ var index = {
         name: 'GNU General Public License (GPL) 3.0',
         text: require('raw!./licenses/gpl-3.0.txt'),
         url: 'http://www.gnu.org/licenses/gpl-3.0.txt',
+        logoUrl: require('raw!./img/base64/gpl-3.0.base64'),
         osiApproved: true
     },
     Apache2: {
@@ -27,6 +28,7 @@ var index = {
         name: 'BSD License 2.0 (3-clause) License',
         text: require('raw!./licenses/bsd-2.0.txt'),
         url: 'http://opensource.org/licenses/BSD-3-Clause',
+        logoUrl: require('raw!./img/base64/bsd-2.0.base64'),
         osiApproved: true
     },
     LGPL2_1: {
@@ -39,12 +41,14 @@ var index = {
         name: 'CC0 1.0 Universal',
         text: require('raw!./licenses/cc0-1.0.txt'),
         url: 'https://creativecommons.org/publicdomain/zero/1.0/legalcode',
+        logoUrl: require('raw!./img/base64/cc0-1.0.base64'),
         osiApproved: false
     },
     CCBY: {
         name: 'CC By (4.0)',
         text: require('raw!./licenses/ccby-4.0.txt'),
         url: 'https://creativecommons.org/licenses/by/4.0/legalcode',
+        logoUrl: require('raw!./img/base64/ccby-4.0.base64'),
         osiApproved: false
     },
     Artistic: {
@@ -70,28 +74,8 @@ var index = {
         text: require('raw!./licenses/afl-3.0.txt'),
         url: 'http://opensource.org/licenses/AFL-3.0',
         osiApproved: true
+    },
+    _images: {
+        'OSI': require('raw!./img/base64/osi.base64')
     }
 };
-
-var exports = {
-    index: index
-};
-
-var images = {
-    GPL3: require('raw!./img/base64/gpl-3.0.base64'),
-    BSD2: require('raw!./img/base64/bsd-2.0.base64'),
-    CC0: require('raw!./img/base64/cc0-1.0.base64'),
-    CCBY: require('raw!./img/base64/ccby-4.0.base64'),
-    OSI: require('raw!./img/base64/osi.base64')
-};
-
-var keys = Object.keys(index);
-for(var i = 0; i < keys.length; i++) {
-    var key = keys[i];
-    if (images[key]) {
-        index[key].imageUrl = images[key];
-    }
-}
-exports[images] = images;
-
-module.export = exports;
