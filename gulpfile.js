@@ -1,19 +1,33 @@
 var gulp = require('gulp');
-var util = require('gulp-util');
-var replace = require('gulp-replace');
 var concat = require('gulp-concat');
 
+var fs = require('fs');
+
+gulp.task('encode', function() {
+    fs.readdir('src/img/orig/', function(err, files) {
+        if (!err) {
+            for (var i = 0; i < files.length; i++) {
+                var fname = files[i];
+                var fparts = fname.split('.');
+                var fbase = fparts.slice(0, -1).join('.');
+                var fext = fparts.slice(-1);
+
+                var data = fs.readFileSync('src/img/orig/' + fname);
+                fs.writeFileSync(
+                    'src/img/base64/' + fbase + '.base64',
+                    'data:image/' + fext + ';base64, ' +new Buffer(data).toString('base64')
+                );
+            }
+        }
+    });
+});
+
 gulp.task('build', function() {
-    console.log('building');
-    var staticPath = util.env.staticPath;
-    var files = ['src/index.js'];
-    if (staticPath) {
-        files.push('src/images.js');
-    }
-    files.push('src/export.js');
-    
-    return gulp.src(files)
-        .pipe(concat({path: 'main.js'}))
-        .pipe(replace('{{staticPath}}', staticPath))
+    return gulp.src(['src/index.js', 'src/images.js', 'src/export.js'])
+        .pipe(concat({
+            path: 'main.js'
+        }))
         .pipe(gulp.dest('./dist'));
 });
+
+gulp.task('default', ['encode', 'build']);

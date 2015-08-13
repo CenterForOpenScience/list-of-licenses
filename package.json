@@ -1,6 +1,6 @@
 {
     "name": "list-of-licenses",
-    "version": "0.0.5",
+    "version": "0.0.6",
     "description": "A collection of common licenses.",
     "main": "dist/main.js",
     "scripts": {
@@ -20,8 +20,6 @@
     },
     "devDependencies": {
         "gulp": "^3.9.0",
-        "gulp-concat": "^2.6.0",
-        "gulp-replace": "^0.5.4",
-        "gulp-util": "^3.0.6"
+        "gulp-concat": "^2.6.0"
     }
 }
