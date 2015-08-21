@@ -1,11 +1,4 @@
 module.exports = {
-    NONE: {
-        name: 'No License',
-        text: require('raw!./licenses/nolicense.txt'),
-        url: 'http://choosealicense.com/licenses/no-license/',
-        osiApproved: false,
-        properties: ['Year', 'Copyright Holders']
-    },
     MIT: {
         name: 'MIT License',
         text: require('raw!./licenses/mit.txt'),
