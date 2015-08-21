@@ -70,12 +70,9 @@ module.exports = {
         osiApproved: true
     },
     'AFL': {
-        name: 'Academin Free License (AFL) 3.0',
+        name: 'Academic Free License (AFL) 3.0',
         text: require('raw!./licenses/afl-3.0.txt'),
         url: 'http://opensource.org/licenses/AFL-3.0',
         osiApproved: true
-    },
-    _images: {
-        'OSI': require('raw!./img/base64/osi.base64')
     }
 };
