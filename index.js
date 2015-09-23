@@ -4,7 +4,7 @@ module.exports = {
         text: require('raw!./licenses/mit.txt'),
         url: 'http://opensource.org/licenses/MIT',
         osiApproved: true,
-        properties: ['Year', 'Copyright Holders']
+        properties: ['year', 'copyrightHolders']
     },
     GPL2: {
         name: 'GNU General Public License (GPL) 2.0',
@@ -31,7 +31,7 @@ module.exports = {
         url: 'http://opensource.org/licenses/BSD-3-Clause',
         logoUrl: require('raw!./img/base64/bsd-2.0.base64'),
         osiApproved: true,
-        properties: ['Year', 'Copyright Holders']
+        properties: ['year', 'copyrightHolders']
     },
     LGPL2_1: {
         name: 'GNU Lesser General Public License (LGPL) 2.1',
