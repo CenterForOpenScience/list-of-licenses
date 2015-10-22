@@ -1,6 +1,11 @@
 var fs = require('fs');
 
 var lol = {
+    NONE: {
+        name: 'No license',
+        text: 'Copyright {{year}} {{copyrightHolders}}',
+        properties: ['year', 'copyrightHolders']
+    },
     MIT: {
         name: 'MIT License',
         text: fs.readFileSync('./licenses/mit.txt').toString(),
@@ -87,6 +92,10 @@ var lol = {
         text: fs.readFileSync('./licenses/afl-3.0.txt').toString(),
         url: 'http://opensource.org/licenses/AFL-3.0',
         osiApproved: true
+    },
+    OTHER: {
+        name: 'License - Other',
+        text: 'You have opted to use your own license. Please upload a license file name license.txt into the OSF Storage for this project.'
     }
 };
 
