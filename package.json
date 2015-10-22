@@ -2,9 +2,10 @@
   "name": "list-of-licenses",
   "version": "0.0.6",
   "description": "A collection of common licenses.",
-  "main": "dist/main.js",
+  "main": "dist/list-of-licenses.json",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "install": "node ./index.js"
   },
   "author": "samchrisinger",
   "license": "ISC",
@@ -16,11 +17,9 @@
     "license"
   ],
   "dependencies": {
-    "raw-loader": "^0.5.1",
-    "webpack": "^1.12.2"
+    "gulp-shell": "^0.5.0"
   },
   "devDependencies": {
-    "gulp": "^3.9.0",
-    "gulp-concat": "^2.6.0"
+    "gulp": "^3.9.0"
   }
 }
