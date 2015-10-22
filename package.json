@@ -1,25 +1,26 @@
 {
-    "name": "list-of-licenses",
-    "version": "0.0.6",
-    "description": "A collection of common licenses.",
-    "main": "dist/main.js",
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "author": "samchrisinger",
-    "license": "ISC",
-    "repository": {
-        "url": "https://github.com/samchrisinger/licenses.git",
-        "type": "git"
-    },
-    "keywords": [
-        "license"
-    ],
-    "dependencies": {
-        "raw-loader": "^0.5.1"
-    },
-    "devDependencies": {
-        "gulp": "^3.9.0",
-        "gulp-concat": "^2.6.0"
-    }
+  "name": "list-of-licenses",
+  "version": "0.0.6",
+  "description": "A collection of common licenses.",
+  "main": "dist/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "samchrisinger",
+  "license": "ISC",
+  "repository": {
+    "url": "https://github.com/samchrisinger/licenses.git",
+    "type": "git"
+  },
+  "keywords": [
+    "license"
+  ],
+  "dependencies": {
+    "raw-loader": "^0.5.1",
+    "webpack": "^1.12.2"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-concat": "^2.6.0"
+  }
 }
