@@ -95,7 +95,7 @@ var lol = {
     },
     OTHER: {
         name: 'License - Other',
-        text: 'You have opted to use your own license. Please upload a license file name license.txt into the OSF Storage for this project.'
+        text: 'Please see the file named license.txt in the OSF Storage of this project.'
     }
 };
 
