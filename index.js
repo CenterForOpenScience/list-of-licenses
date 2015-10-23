@@ -53,7 +53,7 @@ var lol = {
     },
     LGPL3: {
         name: 'GNU Lesser General Public License (LGPL) 3.0',
-        text: fs.readFileSync('./licenses/lgpl-2.1.txt').toString(),
+        text: fs.readFileSync('./licenses/lgpl-3.0.txt').toString(),
         url: 'http://www.gnu.org/licenses/lgpl-3.0.txt',
         osiApproved: true
     },
