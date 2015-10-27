@@ -99,4 +99,14 @@ var lol = {
     }
 };
 
-fs.writeFile('dist/list-of-licenses.json', JSON.stringify(lol));
+// h/t: http://stackoverflow.com/questions/13696148/node-js-create-folder-or-use-existing
+var mkdirSync = function(path) {
+    try {
+        fs.mkdirSync(path);
+    } catch (e) {
+        if (e.code != 'EEXIST') throw e;
+    }
+};
+
+mkdirSync('./dist');
+fs.writeFile('./dist/list-of-licenses.json', JSON.stringify(lol));
