@@ -94,7 +94,7 @@ var lol = {
         osiApproved: true
     },
     OTHER: {
-        name: 'License not listed - choose to add',
+        name: 'Other',
         text: 'Please see the file named license.txt in the OSF Storage of this project.'
     }
 };
