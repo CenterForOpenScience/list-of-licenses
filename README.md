@@ -2,10 +2,6 @@
 
 This repo is meant to be a collection of common licenses made easily accessable as javascript variables.
 
-## Building
-
-run ``` grunt build ```
-
 ## Naming conventions
 
 **Object Keys**
