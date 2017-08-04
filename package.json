@@ -1,25 +1,20 @@
 {
-  "name": "list-of-licenses",
-  "version": "0.0.62",
+  "name": "@centerforopenscience/list-of-licenses",
+  "version": "1.0.0",
   "description": "A collection of common licenses.",
   "main": "dist/list-of-licenses.json",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "install": "node ./index.js"
+    "build": "node ./index.js",
+    "prepublish": "npm run build"
   },
-  "author": "samchrisinger",
+  "author": "Center For Open Science",
   "license": "ISC",
   "repository": {
-    "url": "https://github.com/samchrisinger/licenses.git",
+    "url": "https://github.com/CenterForOpenScience/licenses.git",
     "type": "git"
   },
   "keywords": [
-    "license"
-  ],
-  "dependencies": {
-    "gulp-shell": "^0.5.0"
-  },
-  "devDependencies": {
-    "gulp": "^3.9.0"
-  }
+    "license",
+    "licenses"
+  ]
 }
