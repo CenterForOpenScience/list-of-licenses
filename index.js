@@ -69,13 +69,13 @@ var lol = {
         url: 'https://creativecommons.org/licenses/by/4.0/legalcode',
         osiApproved: false
     },
-    CC-BY-NC-ND: {
+    CCBYNCND: {
         name: 'CC-By Attribution-NonCommercial-NoDerivatives 4.0 International',
         text: fs.readFileSync('./licenses/ccbyncnd-4.0.txt').toString(),
         url: 'https://creativecommons.org/licenses/by-nc-nd/4.0/legalcode',
         osiApproved: false
     },
-    CC-BY-SA4_0: {
+    CCBYSA40: {
         name: 'CC-By Attribution-ShareAlike 4.0 International',
         text: fs.readFileSync('./licenses/ccbysa-4.0.txt').toString(),
         url: 'https://creativecommons.org/licenses/by-sa/4.0/legalcode',
