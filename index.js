@@ -69,6 +69,18 @@ var lol = {
         url: 'https://creativecommons.org/licenses/by/4.0/legalcode',
         osiApproved: false
     },
+    CCBYNCND: {
+        name: 'CC-By Attribution-NonCommercial-NoDerivatives 4.0 International',
+        text: fs.readFileSync('./licenses/ccbyncnd-4.0.txt').toString(),
+        url: 'https://creativecommons.org/licenses/by-nc-nd/4.0/legalcode',
+        osiApproved: false
+    },
+    CCBYSA40: {
+        name: 'CC-By Attribution-ShareAlike 4.0 International',
+        text: fs.readFileSync('./licenses/ccbysa-4.0.txt').toString(),
+        url: 'https://creativecommons.org/licenses/by-sa/4.0/legalcode',
+        osiApproved: false
+    },
     Artistic2: {
         name: 'Artistic License 2.0',
         text: fs.readFileSync('./licenses/artistic-2.0.txt').toString(),
